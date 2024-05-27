@@ -1,0 +1,41 @@
+.signIn-bg {
+  background-color: var(--contentBackground);
+  position: relative;
+  height: 89vh;
+}
+
+.signIn-bg .signIn-form-bg {
+  background-color: var(--elementBackground);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  padding: 20px;
+  border-radius: 10px;
+  transform: translate(-50%, -50%);
+}
+
+.signIn-bg .signIn-form-bg .signIn-form {
+  display: flex;
+  justify-content: center;
+  align-items: start;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.signIn-bg .signIn-form-bg .signIn-form div {
+  display: flex;
+  justify-content: center;
+  align-items: start;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.signIn-bg .signIn-form-bg .signIn-form div label {
+  font-size: 1.15rem;
+}
+
+.signIn-bg .signIn-form-bg .signIn-form div input {
+  font-size: 1.15rem;
+  padding: 10px;
+  border-radius: 5px;
+}

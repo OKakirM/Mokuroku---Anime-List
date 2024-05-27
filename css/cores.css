@@ -1,0 +1,95 @@
+:root {
+  /* Cores mais usadas */
+  --mainColor: #664c9f;
+  --navBackground: #13131b;
+  --contentBackground: #0e0e0f;
+
+  /* Elementos */
+  --elementBackground: #18181c;
+  --elementDetails: #2d2d39;
+  --navElementBackground: #2d2d39;
+
+  /* Cores Extras (Roxo) */
+  --purpleWhite1: #9a7cc4;
+  --purpleWhite2: #886ab8;
+  --purpleWhite3: #775bab;
+  --purpleDark3: #563f91;
+  --purpleDark2: #473285;
+  --purpleDark1: #392878;
+
+  /* Cores Extras (Branco) */
+  --white7: #b3b3b3;
+  --white6: #bfbfbf;
+  --white5: #cccccc;
+  --white4: #d9d9d9;
+  --white3: #e6e6e6;
+  --white2: #f2f2f2;
+  --white1: #ffffff;
+
+  /* Cores Extras (Preto) */
+  --black7: #595959;
+  --black6: #4d4d4d;
+  --black5: #404040;
+  --black4: #333333;
+  --black3: #262626;
+  --black2: #1a1a1a;
+  --black1: #0d0d0d;
+}
+
+/* Roxo */
+.c-PurpleWhite1 {
+  color: var(--purpleWhite1);
+}
+
+.c-PurpleWhite2 {
+  color: var(--purpleWhite2);
+}
+
+.c-PurpleWhite3 {
+  color: var(--purpleWhite3);
+}
+
+.c-PurpleDark3 {
+  color: var(--purpleDark3);
+}
+
+.c-PurpleDark2 {
+  color: var(--purpleDark2);
+}
+
+.c-PurpleDark1 {
+  color: var(--purpleDark1);
+}
+
+.c-MainColor {
+  color: var(--mainColor);
+}
+
+/* Branco */
+.c-white7 {
+  color: var(--white7);
+}
+
+.c-white6 {
+  color: var(--white6);
+}
+
+.c-white5 {
+  color: var(--white5);
+}
+
+.c-white4 {
+  color: var(--white4);
+}
+
+.c-white3 {
+  color: var(--white3);
+}
+
+.c-white2 {
+  color: var(--white2);
+}
+
+.c-white1 {
+  color: var(--white1);
+}

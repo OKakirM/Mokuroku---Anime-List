@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="pt">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./css/style.css">
+  <link rel="stylesheet" href="./css/pages/index.css">
+  <link rel="shortcut icon" type="image/jpg" href="./img/Logo.svg" />
+  <title>Mokuroku</title>
+</head>
+
+<body>
+  <header class="navbar">
+    <nav class="navbar-items">
+      <a href="./index.html">
+        <div class="navbar-logo">
+          <img src="./img/Logo.svg" width="50px" alt="Logo Lyst">
+          <p class="c-white1 font-Bebas"><span class="c-MainColor">Moku</span>roku</p>
+        </div>
+      </a>
+      <!-- > 769px Navbar Options  -->
+      <ul class="navbar-options">
+        <li class="font-Poppins c-white1"><a href="#">Home</a></li>
+        <li class="font-Poppins c-white1"><a href="#">Anime List</a></li>
+        <li class="font-Poppins c-white1"><a href="#">Browse Animes</a></li>
+        <li class="font-Poppins c-white1"><a href="#">News</a></li>
+      </ul>
+
+      <!-- < 768px Navbar Options -->
+      <div class="navbar-mobile">
+        <ul class="navbar-options-MB" id="optionsMobile">
+          <li class="font-Poppins c-white1"><a href="#">Home</a></li>
+          <li class="font-Poppins c-white1"><a href="#">Anime List</a></li>
+          <li class="font-Poppins c-white1"><a href="#">Browse Animes</a></li>
+          <li class="font-Poppins c-white1"><a href="#">News</a></li>
+          <li><a href="#"><img src="./img/icons/x.svg" alt="exit" onclick="disableMenu()"></a></li>
+        </ul>
+        <ul class="navbar-menu-MB" id="menuMobile">
+          <li class="c-white1"><img src="./img/icons/menu.svg" alt="menu icon" onclick="activateMenu()"></li>
+        </ul>
+      </div>
+
+      <div class="navbar-UserSection">
+        <a href="#"><img src="./img/icons/search_icon.svg" alt="search icon" id="searchIcon" width="32"></a>
+        <div id="userLogged" style="display: none;">
+          <div class="user-Container">
+            <img src="./img/placeholder_avatar.png" alt="user avatar">
+            <ul class="user-Dropdown">
+              <li><a href="#" class="font-Poppins c-white1">Profile</a></li>
+              <li><a href="#" class="font-Poppins c-white1">Notifications</a></li>
+              <li><a href="#" class="font-Poppins c-white1">Settings</a></li>
+            </ul>
+          </div>
+          <img src="./img/icons/down_arrow.svg" width="32" alt="down arrow" id="downArrow" style="cursor: pointer;">
+
+        </div>
+        <div id="userNotLogged" style="display: flex;">
+          <a href="./signIn.html" class="signIn font-Poppins c-white1">Sign In</a>
+          <a href="#" class="signUp font-Poppins c-white1">Sign Up</a>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <main class="main-bg">
+    <div class="main-text-intro container">
+      <div>
+        <img src="./img/Logo.svg" class="responsive" width="50px" alt="Logo Lyst">
+        <h1 class="c-white1 font-Bebas"><span class="c-MainColor">Moku</span>roku</h1>
+      </div>
+      <p class="font-Poppins">Enjoy Your Anime List!</p>
+    </div>
+    <h2 class="font-Poppins c-white1 fw-regular container">New Added Animes:</h2>
+    <div class="main-content container">
+      <div class="main-image-container">
+        <div></div>
+      </div>
+
+      <div class="main-image-container">
+        <div></div>
+      </div>
+
+      <div class="main-image-container">
+        <div></div>
+      </div>
+
+      <div class="main-image-container">
+        <div></div>
+      </div>
+
+      <div class="main-image-container">
+        <div></div>
+      </div>
+
+      <div class="main-image-container">
+        <div></div>
+      </div>
+
+      <div class="main-image-container">
+        <div></div>
+      </div>
+
+      <div class="main-image-container">
+        <div></div>
+      </div>
+    </div>
+  </main>
+
+  <script src="./js/navbar.js"></script>
+</body>
+
+</html>
