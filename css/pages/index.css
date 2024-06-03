@@ -1,3 +1,4 @@
+/* Main Content Section */
 .main-bg {
   background-color: var(--contentBackground);
   height: auto;
@@ -84,6 +85,7 @@
   width: 100%;
 }
 
+/* News Section */
 .news-bg {
   background-color: var(--elementDetails);
 }
@@ -91,7 +93,7 @@
 .news-bg .news-content {
   display: flex;
   justify-content: space-between;
-  align-items: center;
+  align-items: start;
   padding: 100px 0px;
 }
 
@@ -188,11 +190,102 @@
   font-size: 0.95rem;
 }
 
-.news-bg .news-content .news-info .news-info-card .news-info-card-content a {
+.news-bg .news-content .news-info .news-info-card .news-info-card-content div {
+  display: flex;
+  justify-content: space-between;
+  align-items: end;
+}
+
+.news-bg
+  .news-content
+  .news-info
+  .news-info-card
+  .news-info-card-content
+  div
+  p {
+  color: var(--elementDetails);
+}
+
+.news-bg
+  .news-content
+  .news-info
+  .news-info-card
+  .news-info-card-content
+  div
+  a {
   font-size: 0.95rem;
   background-color: var(--mainColor);
   padding: 10px 15px;
   display: inline-block;
   border-radius: 5px;
   margin-top: 15px;
+}
+/* Forum Section */
+.news-bg .news-content .news-forum {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  justify-content: center;
+  align-items: start;
+}
+
+.news-bg .news-content .news-forum h1 {
+  font-size: 2.5rem;
+}
+.news-bg .news-content .news-forum .news-forum-card {
+  background-color: var(--contentBackground);
+  padding: 20px;
+  border-radius: 10px 10px 0px 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  max-width: 500px;
+}
+
+.news-bg .news-content .news-forum .news-forum-card .user-section {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.news-bg .news-content .news-forum .news-forum-card .user-section .user {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10px;
+}
+
+.news-bg .news-content .news-forum .news-forum-card .user-section .user p {
+  font-size: 1.2rem;
+  color: var(--white1);
+}
+
+.news-bg .news-content .news-forum .news-forum-card .user-section p {
+  font-size: 0.8rem;
+  color: var(--elementDetails);
+}
+
+.news-bg
+  .news-content
+  .news-forum
+  .news-forum-card
+  .user-section
+  .avatar-container {
+  max-width: 50px;
+  height: auto;
+  border-radius: 50%;
+  overflow: hidden;
+  border: 2px solid var(--mainColor);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.news-bg .news-content .news-forum .news-forum-card .content-section h2 {
+  font-size: 0.95rem;
+}
+
+.news-bg .news-content .news-forum .news-forum-card .social-section {
+  justify-self: end;
+  align-self: flex-end;
 }
