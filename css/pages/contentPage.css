@@ -10,8 +10,34 @@
 
 .content-bg .content-banner img {
   width: 100%;
-  opacity: 80%;
   height: auto;
+}
+
+.alert {
+  position: fixed;
+  top: 100px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.alert .success {
+  background-color: #37b753;
+  z-index: 100;
+  opacity: 1;
+  padding: 10px 20px;
+  border-radius: 5px;
+  color: var(--white1);
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+.alert .error {
+  background-color: #b73737;
+  z-index: 100;
+  opacity: 1;
+  padding: 10px 20px;
+  border-radius: 5px;
+  color: var(--white1);
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 }
 
 /* !End Content Banner */
@@ -37,7 +63,7 @@
   .content-info-intro
   .anime-cover {
   margin-top: -130px;
-  z-index: 1;
+  z-index: 0;
 }
 
 .content-bg
@@ -163,6 +189,21 @@
   .cover-selection
   .completed
   .completed-message
+  a {
+  display: block;
+  padding: 2px;
+  background-color: transparent;
+}
+
+.content-bg
+  .content-info
+  .content-info-intro-bg
+  .content-info-intro
+  .anime-cover
+  .cover-selection
+  .completed
+  .completed-message
+  a
   p {
   color: var(--black1);
   font-size: 0.8rem;
@@ -255,6 +296,21 @@
   .cover-selection
   .watching
   .watching-message
+  a {
+  display: block;
+  padding: 2px;
+  background-color: transparent;
+}
+
+.content-bg
+  .content-info
+  .content-info-intro-bg
+  .content-info-intro
+  .anime-cover
+  .cover-selection
+  .watching
+  .watching-message
+  a
   p {
   color: var(--black1);
   font-size: 0.8rem;
@@ -269,7 +325,7 @@
   .content-info-intro
   .anime-cover
   .cover-selection
-  .favorite {
+  .dropped {
   position: relative;
 }
 
@@ -279,7 +335,7 @@
   .content-info-intro
   .anime-cover
   .cover-selection
-  .favorite
+  .dropped
   a {
   background-color: #b73737;
   padding: 8px;
@@ -292,8 +348,8 @@
   .content-info-intro
   .anime-cover
   .cover-selection
-  .favorite:hover
-  .favorite-message {
+  .dropped:hover
+  .dropped-message {
   top: -100%;
   opacity: 1;
 }
@@ -304,8 +360,8 @@
   .content-info-intro
   .anime-cover
   .cover-selection
-  .favorite
-  .favorite-message {
+  .dropped
+  .dropped-message {
   position: absolute;
   display: block;
   background-color: var(--white1);
@@ -326,8 +382,8 @@
   .content-info-intro
   .anime-cover
   .cover-selection
-  .favorite
-  .favorite-message::after {
+  .dropped
+  .dropped-message::after {
   content: "";
   width: 0;
   height: 0;
@@ -346,8 +402,23 @@
   .content-info-intro
   .anime-cover
   .cover-selection
-  .favorite
-  .favorite-message
+  .dropped
+  .dropped-message
+  a {
+  display: block;
+  padding: 2px;
+  background-color: transparent;
+}
+
+.content-bg
+  .content-info
+  .content-info-intro-bg
+  .content-info-intro
+  .anime-cover
+  .cover-selection
+  .dropped
+  .dropped-message
+  a
   p {
   color: var(--black1);
   font-size: 0.8rem;
@@ -440,6 +511,21 @@
   .cover-selection
   .planning
   .planning-message
+  a {
+  display: block;
+  padding: 2px;
+  background-color: transparent;
+}
+
+.content-bg
+  .content-info
+  .content-info-intro-bg
+  .content-info-intro
+  .anime-cover
+  .cover-selection
+  .planning
+  .planning-message
+  a
   p {
   color: var(--black1);
   font-size: 0.8rem;
@@ -934,6 +1020,21 @@
 
   .content-bg
     .content-info
+    .content-info-stats-bg
+    .content-info-stats
+    .stats
+    .news
+    .news-info-card
+    .news-info-card-content
+    h1 {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+    position: relative;
+    display: inline-block;
+  }
+
+  .content-bg
+    .content-info
     .content-info-intro-bg
     .content-info-intro
     .anime-cover
@@ -1015,7 +1116,7 @@
     .news
     .news-info-card {
     max-width: 300px;
-    height: 220px;
+    height: 250px;
   }
   .content-bg
     .content-info

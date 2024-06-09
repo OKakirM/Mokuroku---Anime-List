@@ -89,4 +89,7 @@
     align-items: center;
     gap: 30px;
   }
+  .footer-bg .footer-info .footer-description {
+    padding: 20px;
+  }
 }

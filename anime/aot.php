@@ -1,0 +1,481 @@
+<?php
+session_start();
+include('../config.php');
+
+// Recuperar os dados do usuário
+$stmt = $conn->prepare("SELECT email, avatar FROM users WHERE id = ?");
+$stmt->bind_param("i", $_SESSION['id']);
+$stmt->execute();
+$stmt->bind_result($email, $avatar);
+$stmt->fetch();
+$stmt->close();
+$conn->close();
+
+// Atualizar variáveis de sessão com o avatar
+$_SESSION['avatar'] = $avatar;
+
+
+?>
+<!DOCTYPE html>
+<html lang="pt">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="../css/style.css">
+  <link rel="stylesheet" href="../css/pages/contentPage.css">
+  <link rel="shortcut icon" type="image/jpg" href="../img/Logo.svg" />
+  <title>Mokuroku</title>
+  <script type="module" src="../js/readData.js"></script>
+</head>
+
+<body>
+<?php
+    if (isset($_SESSION['message'])) {
+      echo "<div class='alert'><p class='font-Poppins success'>" . $_SESSION['message'] . "</p></div>";
+      unset($_SESSION['message']); // Remove a mensagem após exibir
+    } else if (isset($_SESSION['error'])) {
+      echo "<div class='alert'><p class='font-Poppins error'>" . $_SESSION['error'] . "</p></div>";
+      unset($_SESSION['error']); // Remove a mensagem após exibir
+    }
+    ?>
+  <!-- *Navbar -->
+  <header class="navbar">
+    <nav class="navbar-items">
+      <a href="../index.php">
+        <div class="navbar-logo">
+          <img src="../img/Logo.svg" width="50px" alt="Logo Lyst">
+          <p class="c-white1 font-Bebas"><span class="c-MainColor">Moku</span>roku</p>
+        </div>
+      </a>
+      <!-- > 769px Navbar Options  -->
+      <ul class="navbar-options">
+        <li class="font-Poppins c-white1"><a href="../index.php">Home</a></li>
+        <li class="font-Poppins c-white1"><a href="../userList.php">Anime List</a></li>
+        <li class="font-Poppins c-MainColor"><a href="../browseAnimes.php">Browse Animes</a></li>
+        
+      </ul>
+
+      <!-- < 768px Navbar Options -->
+      <div class="navbar-mobile">
+        <ul class="navbar-options-MB" id="optionsMobile">
+          <li class="font-Poppins c-white1"><a href="../index.php">Home</a></li>
+          <li class="font-Poppins c-white1"><a href="../userList.php">Anime List</a></li>
+          <li class="font-Poppins c-MainColor"><a href="../browseAnimes.php">Browse Animes</a></li>
+          
+          <li><a href="#"><img src="../img/icons/x.svg" alt="exit" onclick="disableMenu()"></a></li>
+        </ul>
+        <ul class="navbar-menu-MB" id="menuMobile">
+          <li class="c-white1"><img src="../img/icons/menu.svg" alt="menu icon" onclick="activateMenu()"></li>
+        </ul>
+      </div>
+      <div class="navbar-UserSection">
+        
+        <?php if(isset($_SESSION['loggedin']) && $_SESSION['loggedin'] === true): ?>
+        <div id="userLogged" style="">
+          <div class="user-Container">
+            <img src="../uploads/<?php echo $_SESSION['avatar']; ?>" alt="user avatar">
+            <ul class="user-Dropdown">
+              <li><a href="../logout.php" class="font-Poppins c-white1">Logout</a></li>
+            </ul>
+          </div>
+          <img src="../img/icons/down_arrow.svg" width="32" alt="down arrow" id="downArrow" style="cursor: pointer;">
+        </div>
+        <?php else: ?>
+        <div id="userNotLogged" style="">
+          <a href="../signIn.php" class="signIn font-Poppins c-white1">Sign In</a>
+          <a href="../signUp.php" class="signUp font-Poppins c-white1">Sign Up</a>
+        </div>
+        <?php endif; ?>
+      </div>
+    </nav>
+  </header>
+  <!-- *End Navbar -->
+
+  <!-- *Anime Content -->
+  <main class="content-bg">
+
+    <!-- !Banner -->
+    <div class="content-banner">
+      <img src="../img/animes/aot/banner.jpg" alt="banner">
+    </div>
+    <!-- !End Banner -->
+
+    <!-- !Anime Info -->
+    <div class="content-info">
+
+      <!-- ?Content Intro -->
+      <div class="content-info-intro-bg">
+        <div class="container content-info-intro">
+
+          <div class="anime-cover">
+
+            <div class="cover">
+              <img src="../img/animes/aot/cover.jpg" alt="cover">
+            </div>
+
+            <div class="cover-selection">
+              <!-- *State -->
+              <div class="completed">
+                <div class="completed-message">
+                  <a href=""><p class="font-Poppins">Set as Complete</p></a>
+                </div>
+                <a href="../addToList.php?status=Completed&anime=Attack On Titan&url=aot&image=https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx16498-73IhOXpJZiMF.jpg"><img src="../img/icons/done.svg" alt="completed"></a>
+              </div>
+              <!-- *End State -->
+
+              <!-- *State -->
+              <div class="watching">
+                <div class="watching-message">
+                  <a href=""><p class="font-Poppins">Set as Watching</p></a>
+                </div>
+                <a href="../addToList.php?status=Watching&anime=Attack On Titan&url=aot&image=https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx16498-73IhOXpJZiMF.jpg"><img src="../img/icons/progress.svg" alt="watching"></a>
+              </div>
+              <!-- *End State -->
+
+              <!-- *State -->
+              <div class="dropped">
+              <div class="dropped-message">
+                  <a href=""><p class="font-Poppins">Set as Dropped</p></a>
+                </div>
+                <a href="../addToList.php?status=Dropped&anime=Attack On Titan&url=aot&image=https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx16498-73IhOXpJZiMF.jpg"><img src="../img/icons/dislike.svg" alt="dropped"></a>
+              </div>
+              <!-- *End State -->
+
+              <!-- *State -->
+              <div class="planning">
+                <div class="planning-message">
+                  <a href=""><p class="font-Poppins">Set as Planning</p></a>
+                </div>
+                <a href="../addToList.php?status=Planning&anime=Attack On Titan&url=aot&image=https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx16498-73IhOXpJZiMF.jpg"><img src="../img/icons/description.svg" alt="planning"></a>
+              </div>
+              <!-- *End State -->
+            </div>
+          </div>
+
+          <div class="info">
+            <h1 class="c-white1 font-Poppins">Attack on Titan</h1>
+            <p class="c-white4 font-Poppins">
+              Several hundred years ago, humans were nearly exterminated by titans. Titans are typically several stories tall, seem to have no intelligence, devour human beings and, worst of all, seem to do it for the pleasure rather than as a food source. A small percentage of humanity survived by walling themselves in a city protected by extremely high walls, even taller than the biggest of titans.
+              <br><br>
+              Flash forward to the present and the city has not seen a titan in over 100 years. Teenage boy Eren and his foster sister Mikasa witness something horrific as the city walls are destroyed by a colossal titan that appears out of thin air. As the smaller titans flood the city, the two kids watch in horror as their mother is eaten alive. Eren vows that he will murder every single titan and take revenge for all of mankind.
+              <br><br>
+              <span class="c-white7">(Source: MangaHelpers)</span>
+            </p>
+          </div>
+        </div>
+      </div>
+      <!-- ?End Content Intro -->
+
+      <!-- ?Anime Stats -->
+      <div class="content-info-stats-bg">
+        <div class="content-info-stats container">
+          <div class="details">
+            <div>
+              <h3 class="font-Poppins c-white3">Format</h3>
+              <p class="font-Poppins c-white5">TV</p>
+            </div>
+
+            <div>
+              <h3 class="font-Poppins c-white3">Episodes</h3>
+              <p class="font-Poppins c-white5">25</p>
+            </div>
+
+            <div>
+              <h3 class="font-Poppins c-white3">Episode Duration</h3>
+              <p class="font-Poppins c-white5">24 mins</p>
+            </div>
+
+            <div>
+              <h3 class="font-Poppins c-white3">Status</h3>
+              <p class="font-Poppins c-white5">Finished</p>
+            </div>
+
+            <div>
+              <h3 class="font-Poppins c-white3">Start Date</h3>
+              <p class="font-Poppins c-white5">Apr 7, 2013</p>
+            </div>
+
+            <div>
+              <h3 class="font-Poppins c-white3">End Date</h3>
+              <p class="font-Poppins c-white5">Sep 28, 2013</p>
+            </div>
+
+            <div>
+              <h3 class="font-Poppins c-white3">Season</h3>
+              <p class="font-Poppins c-white5">Spring 2013</p>
+            </div>
+
+            <div>
+              <h3 class="font-Poppins c-white3">Mean Score</h3>
+              <p class="font-Poppins c-white5">84%</p>
+            </div>
+
+            <div>
+              <h3 class="font-Poppins c-white3">Studios</h3>
+              <p class="font-Poppins c-white5">Wit Studio</p>
+            </div>
+
+            <div>
+              <h3 class="font-Poppins c-white3">Genres</h3>
+              <p class="font-Poppins c-white5">Action</p>
+              <p class="font-Poppins c-white5">Drama</p>
+              <p class="font-Poppins c-white5">Fantasy</p>
+              <p class="font-Poppins c-white5">Mystery</p>
+            </div>
+
+          </div>
+          <div class="stats">
+            <!-- *Characters -->
+            <div>
+              <h2 class="font-Poppins c-white1">Characters</h2>
+              <!-- ?Stats Grid -->
+              <div class="stats-grid">
+                <!-- *Card -->
+                <div class="content">
+                  <div class="first-section">
+                    <div class="cover">
+                      <img src="https://s4.anilist.co/file/anilistcdn/character/large/b40882-dsj7IP943WFF.jpg" alt="Eren">
+                    </div>
+                    <div class="info">
+                      <p class="font-Poppins c-white3">Eren Yeager</p>
+                      <p class="font-Poppins c-white7">Main</p>
+                    </div>
+                  </div>
+                  <div class="second-section">
+                    <div class="info">
+                      <p class="font-Poppins c-white3">Yuuki Kaji</p>
+                      <p class="font-Poppins c-white7">Japanese</p>
+                    </div>
+                    <div class="cover">
+                      <img src="https://s4.anilist.co/file/anilistcdn/staff/large/n95672-RN4nm0OFwCyU.png" alt="Yuuki Kaji">
+                    </div>
+                  </div>
+
+                </div>
+                <!-- *End Card -->
+                <!-- *Card -->
+                <div class="content">
+                  <div class="first-section">
+                    <div class="cover">
+                      <img src="https://s4.anilist.co/file/anilistcdn/character/large/b40881-F3gr1PkreDvj.png" alt="Mikasa">
+                    </div>
+                    <div class="info">
+                      <p class="font-Poppins c-white3">Mikasa Ackerman</p>
+                      <p class="font-Poppins c-white7">Main</p>
+                    </div>
+                  </div>
+                  <div class="second-section">
+                    <div class="info">
+                      <p class="font-Poppins c-white3">Yui Ishikawa</p>
+                      <p class="font-Poppins c-white7">Japanese</p>
+                    </div>
+                    <div class="cover">
+                      <img src="https://s4.anilist.co/file/anilistcdn/staff/large/n100142-k6RP0HzXffUG.png" alt="Yui Ishikawa">
+                    </div>
+                  </div>
+
+                </div>
+                <!-- *End Card -->
+                <!-- *Card -->
+                <div class="content">
+                  <div class="first-section">
+                    <div class="cover">
+                      <img src="https://s4.anilist.co/file/anilistcdn/character/large/b46494-g7xYYuBtYPnO.png" alt="Armin">
+                    </div>
+                    <div class="info">
+                      <p class="font-Poppins c-white3">Armin Arlert</p>
+                      <p class="font-Poppins c-white7">Main</p>
+                    </div>
+                  </div>
+                  <div class="second-section">
+                    <div class="info">
+                      <p class="font-Poppins c-white3">Marina Inoue</p>
+                      <p class="font-Poppins c-white7">Japanese</p>
+                    </div>
+                    <div class="cover">
+                      <img src="https://s4.anilist.co/file/anilistcdn/staff/large/n95158-OLhgs8zv5xsp.jpg" alt="Marina Inoue">
+                    </div>
+                  </div>
+
+                </div>
+                <!-- *End Card -->
+                <!-- *Card -->
+                <div class="content">
+                  <div class="first-section">
+                    <div class="cover">
+                      <img src="https://s4.anilist.co/file/anilistcdn/character/large/b45627-CR68RyZmddGG.png" alt="Levi">
+                    </div>
+                    <div class="info">
+                      <p class="font-Poppins c-white3">Levi</p>
+                      <p class="font-Poppins c-white7">Supporting</p>
+                    </div>
+                  </div>
+                  <div class="second-section">
+                    <div class="info">
+                      <p class="font-Poppins c-white3">Hiroshi Kamiya</p>
+                      <p class="font-Poppins c-white7">Japanese</p>
+                    </div>
+                    <div class="cover">
+                      <img src="https://s4.anilist.co/file/anilistcdn/staff/large/n95118-oOElrn1aSaiC.png" alt="Hiroshi Kamiya">
+                    </div>
+                  </div>
+
+                </div>
+                <!-- *End Card -->
+                <!-- *Card -->
+                <div class="content">
+                  <div class="first-section">
+                    <div class="cover">
+                      <img src="https://s4.anilist.co/file/anilistcdn/character/large/b45887-QPtJH0KwqthW.jpg" alt="Sasha Blouse">
+                    </div>
+                    <div class="info">
+                      <p class="font-Poppins c-white3">Sasha <br> Blouse</p>
+                      <p class="font-Poppins c-white7">Supporting</p>
+                    </div>
+                  </div>
+                  <div class="second-section">
+                    <div class="info">
+                      <p class="font-Poppins c-white3">Yuu <br> Kobayashi</p>
+                      <p class="font-Poppins c-white7">Japanese</p>
+                    </div>
+                    <div class="cover">
+                      <img src="https://s4.anilist.co/file/anilistcdn/staff/large/n95034-AwobjrcmkMi9.png" alt="Yuu Kobayashi">
+                    </div>
+                  </div>
+
+                </div>
+                <!-- *End Card -->
+                <!-- *Card -->
+                <div class="content">
+                  <div class="first-section">
+                    <div class="cover">
+                      <img src="https://s4.anilist.co/file/anilistcdn/character/large/b46484-P6A2GjNQn49F.png" alt="Reiner Braun">
+                    </div>
+                    <div class="info">
+                      <p class="font-Poppins c-white3">Reiner <br> Braun</p>
+                      <p class="font-Poppins c-white7">Supporting</p>
+                    </div>
+                  </div>
+                  <div class="second-section">
+                    <div class="info">
+                      <p class="font-Poppins c-white3">Yoshimasa <br> Hosoya
+                      </p>
+                      <p class="font-Poppins c-white7">Japanese</p>
+                    </div>
+                    <div class="cover">
+                      <img src="https://s4.anilist.co/file/anilistcdn/staff/large/n100626-bH8eZ0wv3HYX.jpg" alt="Yoshimasa Hosoya">
+                    </div>
+                  </div>
+
+                </div>
+                <!-- *End Card -->
+              </div>
+            </div>
+            <!-- ?End Stats Grid -->
+
+            <!-- *Staff -->
+            <div>
+              <h2 class="font-Poppins c-white1">Staff</h2>
+              <!-- ?Stats Grid -->
+              <div class="stats-grid">
+                <!-- *Card -->
+                <div class="content">
+                  <div class="first-section">
+                    <div class="cover">
+                      <img src="https://s4.anilist.co/file/anilistcdn/staff/large/n106705-ttS2qZpF2FTZ.jpg" alt="Hajime Isayama">
+                    </div>
+                    <div class="info">
+                      <p class="font-Poppins c-white3">Hajime Isayama</p>
+                      <br>
+                      <p class="font-Poppins c-white7">Original Creator</p>
+                    </div>
+                  </div>
+                </div>
+                <!-- *End Card -->
+                <div class="content">
+                  <div class="first-section">
+                    <div class="cover">
+                      <img src="https://s4.anilist.co/file/anilistcdn/staff/large/n100088-tFWlDxGJEPlk.png" alt="Tetsurou Araki">
+                    </div>
+                    <div class="info">
+                      <p class="font-Poppins c-white3">Tetsurou Araki</p>
+                      <br>
+                      <p class="font-Poppins c-white7">Director</p>
+                    </div>
+                  </div>
+                </div>
+                <!-- *End Card -->
+                <div class="content">
+                  <div class="first-section">
+                    <div class="cover">
+                      <img src="https://s4.anilist.co/file/anilistcdn/staff/large/118905-vN0KGRV37wBH.jpg" alt="Masashi Koizuka">
+                    </div>
+                    <div class="info">
+                      <p class="font-Poppins c-white3">Masashi Koizuka</p>
+                      <br>
+                      <p class="font-Poppins c-white7">Assistant Director</p>
+                    </div>
+                  </div>
+                </div>
+                <!-- *End Card -->
+              </div>
+            </div>
+
+            <!-- *Trailer & News -->
+            <div class="extra-info">
+              <div class="trailer">
+                <h2 class="font-Poppins c-white1">Trailer</h2>
+                <iframe class="trailer" src="https://www.youtube.com/embed/LV-nazLVmgo" title="Attack on Titan Season 1 Trailer" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+              </div>
+              <div class="news">
+                <h2 class="font-Poppins c-white1">Last News</h2>
+                <!-- ?Card -->
+                <div class="news-info-card">
+                  <div class="news-info-card-image-container">
+                    <img src="../img/animes/aot/banner.jpg" alt="News 1 - Lorem Ipsum">
+                  </div>
+                  <div class="news-info-card-content">
+                    <h1 class="c-white1 font-Poppins fw-regular">Why Fans are hating this final?</h1>
+                    <div>
+                      <a href="#" class="font-Poppins c-white1">Read more <img src="../img/icons/arrow_forward.svg" alt=""></a>
+                      <p class="font-Poppins" name="date"></p>
+                    </div>
+                  </div>
+                </div>
+                <!-- ?End Card -->
+              </div>
+            </div>
+            <!-- ?End Stats Grid -->
+          </div>
+        </div>
+      </div>
+      <!-- ?End Anime Stats -->
+    </div>
+    <!-- !End Anime Info -->
+  </main>
+  <!-- *End Anime Content -->
+
+  <!-- *Footer -->
+  <footer class="footer-bg">
+    <div class="container footer-info">
+      <div class="footer-nav">
+        <a href="../"><img src="../img/Logo.svg" alt=""></a>
+        <ul>
+          <li class="c-white1 font-Poppins"><a href="../">Home</a></li>
+          <li class="c-white1 font-Poppins"><a href="../userList.php">Anime List</a></li>
+          <li class="c-white1 font-Poppins"><a href="../browseAnimes.php">Browse Animes</a></li>
+        </ul>
+      </div>
+      <div class="footer-description">
+        <h1 class="font-Poppins fw-regular">Mokuroku is an anime and manga social networking and social cataloging application website which you can create your own account to track, discover and share your favorite animes & mangas.</h1>
+        <h2 class="font-Poppins fw-regular">Mokuroku is not a true company, all of the database here was created for a final project course in Tomar, Portugal.</h2>
+      </div>
+    </div>
+  </footer>
+  <!-- *End Footer -->
+
+  <script src="../js/navbar.js"></script>
+</body>
+
+</html>

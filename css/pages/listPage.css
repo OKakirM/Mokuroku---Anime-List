@@ -1,0 +1,121 @@
+body {
+  background-color: var(--contentBackground);
+}
+
+.Completed {
+  color: #374bb7;
+}
+
+.Watching {
+  color: #37b753;
+}
+
+.Dropped {
+  color: #b73737;
+}
+
+.Planning {
+  color: #404d54;
+}
+
+.list-bg {
+  background-color: var(--contentBackground);
+  padding: 80px 0px;
+}
+
+.list-bg .list {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+  flex-direction: column;
+}
+
+.list-bg .list form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+.list-bg .list form input {
+  background-color: var(--elementBackground);
+  border: 2px solid var(--mainColor);
+  font-size: 1.4rem;
+  color: var(--white1);
+  font-family: "Poppins";
+}
+
+.list-bg .list form input:focus {
+  outline: 0;
+}
+
+.list-bg .list h1 {
+  font-size: 3rem;
+  text-align: center;
+}
+
+.list-bg .list table {
+  width: 100%;
+  position: relative;
+  border: 3px solid var(--mainColor);
+  border-collapse: collapse;
+  table-layout: fixed;
+}
+
+.list-bg .list table tr {
+  background-color: var(--elementBackground);
+}
+
+.list-bg .list table th {
+  text-align: center;
+  color: var(--white1);
+  font-family: "Poppins";
+}
+
+.list-bg .list table th {
+  text-align: center;
+  border-bottom: 2px solid var(--elementDetails);
+  color: var(--white1);
+  font-family: "Poppins";
+}
+
+.list-bg .list table th,
+td {
+  padding: 15px;
+  display: table-cell;
+}
+
+.list-bg .list table td {
+  text-align: center;
+  border-bottom: 2px solid var(--elementDetails);
+  color: var(--white1);
+  font-family: "Poppins";
+}
+
+.list-bg .list table td a {
+  transition: 0.2s ease all;
+}
+
+.list-bg .list table td a:hover {
+  color: var(--mainColor);
+}
+
+.list-bg .list table .img-container {
+  width: 50%;
+  margin: 0 auto;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.list-bg .list table img {
+  width: 100%;
+}
+
+@media (max-height: 1080px) {
+  .list-bg {
+    height: 100%;
+  }
+}

@@ -3,7 +3,7 @@ const optionsMobile = document.getElementById("optionsMobile");
 
 function activateMenu() {
   menu.style.display = "none";
-  optionsMobile.style.display = "block";
+  optionsMobile.style.display = "flex";
 }
 
 function disableMenu() {

@@ -18,28 +18,11 @@
   position: absolute;
   top: 50%;
   left: 50%;
+  width: 400px;
   padding: 30px;
   border-radius: 10px;
   transform: translate(-50%, -50%);
   border: 2px solid var(--mainColor);
-}
-
-.signIn-bg .signIn-form-bg .signIn-form,
-.signUp-bg .signIn-form-bg .signIn-form {
-  display: flex;
-  justify-content: center;
-  align-items: start;
-  flex-direction: column;
-  gap: 20px;
-}
-
-.signIn-bg .signIn-form-bg .signIn-form div,
-.signUp-bg .signIn-form-bg .signIn-form div {
-  display: flex;
-  justify-content: center;
-  align-items: start;
-  flex-direction: column;
-  gap: 5px;
 }
 
 .signIn-bg .signIn-form-bg .signIn-form div label,
@@ -50,6 +33,7 @@
 .signIn-bg .signIn-form-bg .signIn-form div input,
 .signUp-bg .signIn-form-bg .signIn-form div input {
   font-size: 1.15rem;
+  width: 100%;
   padding: 5px 10px;
   border-radius: 5px;
   border: 2px solid var(--mainColor);
@@ -70,7 +54,41 @@
   border: none;
   border-radius: 5px;
   margin: 0 auto;
+  display: block;
   color: var(--white1);
   padding: 10px 20px;
   cursor: pointer;
+}
+
+.success {
+  background-color: #37b753;
+  color: var(--white1);
+  padding: 10px;
+  border-radius: 5px;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+.error {
+  background-color: #b73737;
+  color: var(--white1);
+  padding: 10px;
+  border-radius: 5px;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+@media (max-width: 768px) {
+  .signIn-bg .signIn-form-bg,
+  .signUp-bg .signIn-form-bg {
+    background-color: var(--elementBackground);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 300px;
+    padding: 30px;
+    border-radius: 10px;
+    transform: translate(-50%, -50%);
+    border: 2px solid var(--mainColor);
+  }
 }
