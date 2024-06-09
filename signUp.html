@@ -63,9 +63,14 @@
     </nav>
   </header>
 
-  <main class="signIn-bg">
+  <main class="signUp-bg">
     <div class="signIn-form-bg container">
       <form action="" method="POST" class="signIn-form">
+        <div>
+          <label class="c-white1 font-Poppins" for="name">Username: </label>
+          <input type="text" name="name" id="name" required>
+        </div>
+
         <div>
           <label class="c-white1 font-Poppins" for="email">E-mail: </label>
           <input type="email" name="email" id="email" required>
@@ -74,6 +79,10 @@
         <div>
           <label class="c-white1 font-Poppins" for="pass">Password: </label>
           <input type="password" name="pass" id="pass" required>
+        </div>
+        <div>
+          <label class="c-white1 font-Poppins" for="avatar">Avatar: </label>
+          <input type="file" name="avatar" id="avatar" required>
         </div>
         <button type="submit">Login</button>
       </form>

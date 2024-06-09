@@ -8,6 +8,7 @@
   <link rel="stylesheet" href="./css/pages/index.css">
   <link rel="shortcut icon" type="image/jpg" href="./img/Logo.svg" />
   <title>Mokuroku</title>
+  <script type="module" src="./js/readData.js"></script>
 </head>
 
 <body>
@@ -58,7 +59,7 @@
         </div>
         <div id="userNotLogged" style="display: flex;">
           <a href="./signIn.html" class="signIn font-Poppins c-white1">Sign In</a>
-          <a href="#" class="signUp font-Poppins c-white1">Sign Up</a>
+          <a href="./signUp.html" class="signUp font-Poppins c-white1">Sign Up</a>
         </div>
       </div>
     </nav>
@@ -80,45 +81,23 @@
       <h2 class="font-Poppins c-white1 fw-regular container">Most Popular Animes:</h2>
       <div class="main-grid container">
         <div class="main-image-container">
-          <a href="./anime/one_piece.html"><img src="./img/animes/one piece/cover.jpg" alt="One Piece"></a>
+          <a href="./anime/one_piece.html"><img id="oneCover" src="" alt="One Piece"></a>
         </div>
 
         <div class="main-image-container">
-          <a href="./anime/dbz.html"><img src="./img/animes/dbz/cover.png" alt="Dragon Ball Z"></a>
+          <a href="./anime/dbz.html"><img id="dbzCover" src="" alt="Dragon Ball Z"></a>
         </div>
 
         <div class="main-image-container">
-          <a href="./anime/demon_slayer.html"><img src="./img/animes/kny/cover.jpg" alt="Kimetsu no Yaiba"></a>
+          <a href="./anime/demon_slayer.html"><img id="knyCover" src="" alt="Kimetsu no Yaiba"></a>
         </div>
 
         <div class="main-image-container">
-          <a href="./anime/aot.html"><img src="./img/animes/aot/cover.jpg" alt="Attack on Titan"></a>
+          <a href="./anime/aot.html"><img id="aotCover" src="" alt="Attack on Titan"></a>
         </div>
 
         <div class="main-image-container">
-          <a href="./anime/jujutsu_kaisen.html"><img src="./img/animes/jk/cover.jpg" alt="Jujutsu Kaisen"></a>
-        </div>
-      </div>
-      <h2 class="font-Poppins c-white1 fw-regular container">Most Popular Mangas:</h2>
-      <div class="main-grid container">
-        <div class="main-image-container">
-          <img src="./img/manga/naruto/cover.jpg" alt="Naruto">
-        </div>
-
-        <div class="main-image-container">
-          <img src="./img/manga/berserk/cover.jpg" alt="Berserk">
-        </div>
-
-        <div class="main-image-container">
-          <img src="./img/manga/death note/cover.jpg" alt="Death Note">
-        </div>
-
-        <div class="main-image-container">
-          <img src="./img/manga/db/cover.jpg" alt="Dragon Ball">
-        </div>
-
-        <div class="main-image-container">
-          <img src="./img/manga/usogui/cover.jpg" alt="Usogui">
+          <a href="./anime/jujutsu_kaisen.html"><img id="jjkCover" src="" alt="Jujutsu Kaisen"></a>
         </div>
       </div>
     </div>
@@ -135,7 +114,7 @@
         <!-- ?Card -->
         <div class="news-info-card">
           <div class="news-info-card-image-container">
-            <img src="./img/animes/dbz/banner.jpg" alt="News 1 - Lorem Ipsum">
+            <img id="dbzBanner" src="" alt="News 1 - Lorem Ipsum">
           </div>
           <div class="news-info-card-content">
             <h1 class="c-white1 font-Poppins fw-regular">Lorem Ipsum</h1>

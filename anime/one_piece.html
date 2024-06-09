@@ -8,6 +8,7 @@
   <link rel="stylesheet" href="../css/pages/contentPage.css">
   <link rel="shortcut icon" type="image/jpg" href="../img/Logo.svg" />
   <title>Mokuroku</title>
+  <script type="module" src="../js/readData.js"></script>
 </head>
 
 <body>
@@ -70,7 +71,7 @@
 
     <!-- !Banner -->
     <div class="content-banner">
-      <img src="../img/animes/one piece/banner.jpg" alt="banner">
+      <img id="oneBanner" src="" alt="banner">
     </div>
     <!-- !End Banner -->
 
@@ -84,7 +85,7 @@
           <div class="anime-cover">
 
             <div class="cover">
-              <img src="../img/animes/one piece/cover.jpg" alt="cover">
+              <img id="oneCover" src="" alt="cover">
             </div>
 
             <div class="cover-selection">
@@ -127,13 +128,8 @@
           </div>
 
           <div class="info">
-            <h1 class="c-white1 font-Poppins">One Piece</h1>
-            <p class="c-white4 font-Poppins">
-              Gold Roger was known as the Pirate King, the strongest and most infamous being to have sailed the Grand Line. The capture and death of Roger by the World Government brought a change throughout the world. His last words before his death revealed the location of the greatest treasure in the world, One Piece. It was this revelation that brought about the Grand Age of Pirates, men who dreamed of finding One Piece (which promises an unlimited amount of riches and fame), and quite possibly the most coveted of titles for the person who found it, the title of the Pirate King.
-              <br><br>
-              Enter Monkey D. Luffy, a 17-year-old boy that defies your standard definition of a pirate. Rather than the popular persona of a wicked, hardened, toothless pirate who ransacks villages for fun, Luffy’s reason for being a pirate is one of pure wonder; the thought of an exciting adventure and meeting new and intriguing people, along with finding One Piece, are his reasons of becoming a pirate. Following in the footsteps of his childhood hero, Luffy and his crew travel across the Grand Line, experiencing crazy adventures, unveiling dark mysteries and battling strong enemies, all in order to reach One Piece.
-              <br><br>
-              <span class="c-white7">(Source: AnimeNewsNetwork)</span>
+            <h1 class="c-white1 font-Poppins" id="oneTitle"></h1>
+            <p id="oneSinopse" class="c-white4 font-Poppins">
             </p>
           </div>
         </div>
@@ -146,56 +142,49 @@
           <div class="details">
             <div>
               <h3 class="font-Poppins c-PurpleWhite1">Airing</h3>
-              <p class="font-Poppins c-PurpleWhite3">Ep 1108</p>
+              <p class="font-Poppins c-PurpleWhite3">Ep <span id="oneEp"></span></p>
             </div>
 
             <div>
               <h3 class="font-Poppins c-white3">Format</h3>
-              <p class="font-Poppins c-white5">TV</p>
-            </div>
-
-            <div>
-              <h3 class="font-Poppins c-white3">Episodes</h3>
-              <p class="font-Poppins c-white5">25</p>
+              <p class="font-Poppins c-white5" id="oneFormat"></p>
             </div>
 
             <div>
               <h3 class="font-Poppins c-white3">Episode Duration</h3>
-              <p class="font-Poppins c-white5">24 mins</p>
+              <p class="font-Poppins c-white5" id="oneDuration"></p>
             </div>
 
             <div>
               <h3 class="font-Poppins c-white3">Status</h3>
-              <p class="font-Poppins c-white5">Releasing</p>
+              <p class="font-Poppins c-white5" id="oneStatus"></p>
             </div>
 
             <div>
               <h3 class="font-Poppins c-white3">Start Date</h3>
-              <p class="font-Poppins c-white5">Oct 20, 1999</p>
+              <p class="font-Poppins c-white5" id="oneSDate"></p>
             </div>
 
             <div>
               <h3 class="font-Poppins c-white3">Season</h3>
-              <p class="font-Poppins c-white5">Fall 1999</p>
+              <p class="font-Poppins c-white5" id="oneSeason"></p>
             </div>
 
             <div>
               <h3 class="font-Poppins c-white3">Mean Score</h3>
-              <p class="font-Poppins c-white5">88%</p>
+              <p class="font-Poppins c-white5" id="oneScore"></p>
             </div>
 
             <div>
               <h3 class="font-Poppins c-white3">Studios</h3>
-              <p class="font-Poppins c-white5">Toei Animation</p>
+              <p class="font-Poppins c-white5" id="oneStudio"></p>
             </div>
 
             <div>
               <h3 class="font-Poppins c-white3">Genres</h3>
-              <p class="font-Poppins c-white5">Action</p>
-              <p class="font-Poppins c-white5">Adventure</p>
-              <p class="font-Poppins c-white5">Drama</p>
-              <p class="font-Poppins c-white5">Comedy</p>
-              <p class="font-Poppins c-white5">Fantasy</p>
+              <div id="oneGenres">
+              </div>
+
             </div>
 
           </div>
@@ -412,7 +401,7 @@
                     <h1 class="c-white1 font-Poppins fw-regular">Lorem Ipsum</h1>
                     <div>
                       <a href="#" class="font-Poppins c-white1">Read more <img src="../img/icons/arrow_forward.svg" alt=""></a>
-                      <p class="font-Poppins">03/06/2024</p>
+                      <p class="font-Poppins" id="date"></p>
                     </div>
                   </div>
                 </div>

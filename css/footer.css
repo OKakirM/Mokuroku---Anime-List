@@ -80,3 +80,13 @@
   font-size: 0.8rem;
   color: var(--black3);
 }
+
+@media (max-width: 768px) {
+  .footer-bg .footer-info .footer-nav ul {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+  }
+}

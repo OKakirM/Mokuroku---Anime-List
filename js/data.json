@@ -1,0 +1,569 @@
+{
+  "Anime": {
+    "dbz": {
+      "characters": {
+        "goku": [
+          {
+            "name": "Gokuu Son",
+            "image": "https://s4.anilist.co/file/anilistcdn/character/large/246-wsRRr6z1kii8.png",
+            "function": "Main",
+            "Va": "Masako Nozawa",
+            "pic": "https://s4.anilist.co/file/anilistcdn/staff/large/n95557-5a2nnIBK05ul.png",
+            "nationality": "Japanese"
+          }
+        ],
+        "vegeta": [
+          {
+            "name": "Vegeta",
+            "image": "https://s4.anilist.co/file/anilistcdn/character/large/b913-NIFkKazWM8VO.png",
+            "function": "Main",
+            "Va": "Ryou Horikawa",
+            "pic": "https://s4.anilist.co/file/anilistcdn/staff/large/n95518-6VFuLBDEPjTa.png",
+            "nationality": "Japanese"
+          }
+        ],
+        "piccolo": [
+          {
+            "name": "Piccolo",
+            "image": "https://s4.anilist.co/file/anilistcdn/character/large/b914-KuS8AWjqBrqa.jpg",
+            "function": "Main",
+            "Va": "Toshio Furukawa",
+            "pic": "https://s4.anilist.co/file/anilistcdn/staff/large/n95673-jNN4GqGgpssj.png",
+            "nationality": "Japanese"
+          }
+        ],
+        "gohan": [
+          {
+            "name": "Gohan Son",
+            "image": "https://s4.anilist.co/file/anilistcdn/character/large/b2093-kdFZhqcNSsqW.png",
+            "function": "Main",
+            "Va": "Masako Nozawa",
+            "pic": "https://s4.anilist.co/file/anilistcdn/staff/large/n95557-5a2nnIBK05ul.png",
+            "nationality": "Japanese"
+          }
+        ],
+        "kuririn": [
+          {
+            "name": "Kuririn",
+            "image": "https://s4.anilist.co/file/anilistcdn/character/large/b2159-qtEuMYyOUkwY.jpg",
+            "function": "Main",
+            "Va": "Mayumi Tanaka",
+            "pic": "https://s4.anilist.co/file/anilistcdn/staff/large/n95075-1qD4TeW1ON92.png",
+            "nationality": "Japanese"
+          }
+        ],
+        "puar": [
+          {
+            "name": "Pu'ar",
+            "image": "https://s4.anilist.co/file/anilistcdn/character/large/b677-PTNZaPeuV1Dx.jpg",
+            "function": "Supporting",
+            "Va": "Naoko Watanabe",
+            "pic": "https://s4.anilist.co/file/anilistcdn/staff/large/n95674-VNsBjVJQe5kD.jpg",
+            "nationality": "Japanese"
+          }
+        ]
+      },
+      "staff": {
+        "creator": [
+          {
+            "name": "Akira Toriyama",
+            "function": "Original Creator",
+            "pic": "https://s4.anilist.co/file/anilistcdn/staff/large/n96901-f40brDFeIlzf.png"
+          }
+        ],
+        "staff1": [
+          {
+            "name": "Shunsuke Kikuchi",
+            "function": "Music",
+            "pic": "https://s4.anilist.co/file/anilistcdn/staff/large/n102062-7zltd67nFrOl.png"
+          }
+        ],
+        "staff2": [
+          {
+            "name": "Mitsuo Hashimoto",
+            "function": "Episode Director",
+            "pic": "https://s4.anilist.co/file/anilistcdn/staff/large/n122072-YxNtfYs3C8l1.jpg"
+          }
+        ]
+      },
+      "images": [
+        {
+          "banner": "https://s4.anilist.co/file/anilistcdn/media/anime/banner/813-03ZLvWJgR6Wd.jpg",
+          "cover": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx813-TsHyhR3EDd2x.png"
+        }
+      ],
+      "details": [
+        {
+          "name": "Dragon Ball Z",
+          "sinopse": [
+            "Goku is back with his new son, Gohan, but just when things are getting settled down, the adventures continue. Whether he is facing enemies such as Freeza, Cell, or Boo, Goku is proven to be an elite of his own and discovers his race, Saiyan. He meets many new people, gaining allies as well as enemies, as he still finds time to raise a family and be the happy-go-lucky Saiyan he is.",
+            "(Source: Anime News Network)"
+          ],
+          "format": "TV",
+          "ep": 291,
+          "ep-duration": "24 mins",
+          "stats": "finished",
+          "sDate": "Apr 26, 1989",
+          "eDate": "Jan 31, 1996",
+          "season": "Spring 1989",
+          "score": "79%",
+          "studio": "Toei Animation",
+          "genres": ["Adventure", "Comedy", "Fantasy", "Supernatural"]
+        }
+      ]
+    },
+    "one_piece": {
+      "characters": {
+        "luffy": [
+          {
+            "name": "Luffy D. Monkey",
+            "image": "https://s4.anilist.co/file/anilistcdn/character/large/b40-fDTq7f4XyJan.png",
+            "function": "Main",
+            "Va": "Mayumi Tanaka",
+            "pic": "https://s4.anilist.co/file/anilistcdn/staff/large/n95075-1qD4TeW1ON92.png",
+            "nationality": "Japanese"
+          }
+        ],
+        "robin": [
+          {
+            "name": "Robin Nico",
+            "image": "https://s4.anilist.co/file/anilistcdn/character/large/b61-YQmTA6SO0UuV.png",
+            "function": "Main",
+            "Va": "Yuriko Yamaguchi",
+            "pic": "https://s4.anilist.co/file/anilistcdn/staff/large/n95130-GoO41ve3YWQw.png",
+            "nationality": "Japanese"
+          }
+        ],
+        "zoro": [
+          {
+            "name": "Zoro Roronoa",
+            "image": "https://s4.anilist.co/file/anilistcdn/character/large/b62-Wixe3kLJGVby.png",
+            "function": "Main",
+            "Va": "Kazuya Nakai",
+            "pic": "https://s4.anilist.co/file/anilistcdn/staff/large/n95123-54LrTiD9kGwY.jpg",
+            "nationality": "Japanese"
+          }
+        ],
+        "franky": [
+          {
+            "name": "Franky",
+            "image": "https://s4.anilist.co/file/anilistcdn/character/large/n64-ChX6ZzHHjXqA.png",
+            "function": "Main",
+            "Va": "Kazuki Yao",
+            "pic": "https://s4.anilist.co/file/anilistcdn/staff/large/n95131-TCVTgxb08tfE.png",
+            "nationality": "Japanese"
+          }
+        ],
+        "sanji": [
+          {
+            "name": "Sanji",
+            "image": "https://s4.anilist.co/file/anilistcdn/character/large/b305-OCK4jCGefFKU.png",
+            "function": "Main",
+            "Va": "Hiroaki Hirata",
+            "pic": "https://s4.anilist.co/file/anilistcdn/staff/large/n95125-NeFFiJupoDVj.png",
+            "nationality": "Japanese"
+          }
+        ],
+        "chopper": [
+          {
+            "name": "Chopper Tony Tony",
+            "image": "https://s4.anilist.co/file/anilistcdn/character/large/n309-Px56UsWX35A3.jpg",
+            "function": "Main",
+            "Va": "Ikue Ootani",
+            "pic": "https://s4.anilist.co/file/anilistcdn/staff/large/n95128-9YWpE1d2U8Sj.png",
+            "nationality": "Japanese"
+          }
+        ]
+      },
+      "staff": {
+        "creator": [
+          {
+            "name": "Eiichirou Oda",
+            "function": "Original Creator",
+            "pic": "https://s4.anilist.co/file/anilistcdn/staff/large/n96881-Cyv6wFJxpDw7.png"
+          }
+        ],
+        "staff1": [
+          {
+            "name": "Kounosuke Uda",
+            "function": "Chief Director (eps 1-278)",
+            "pic": "https://s4.anilist.co/file/anilistcdn/staff/large/n100162-DpFzStKbEy9E.png"
+          }
+        ],
+        "staff2": [
+          {
+            "name": "Kazuya Hisada",
+            "function": "Character Design (eps 385-891)",
+            "pic": "https://s4.anilist.co/file/anilistcdn/staff/large/n103798-LdEfvPnDnoWo.png"
+          }
+        ]
+      },
+      "images": [
+        {
+          "banner": "https://s4.anilist.co/file/anilistcdn/media/anime/banner/21-wf37VakJmZqs.jpg",
+          "cover": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx21-YCDoj1EkAxFn.jpg"
+        }
+      ],
+      "details": [
+        {
+          "name": "One Piece",
+          "sinopse": [
+            "Gold Roger was known as the Pirate King, the strongest and most infamous being to have sailed the Grand Line. The capture and death of Roger by the World Government brought a change throughout the world. His last words before his death revealed the location of the greatest treasure in the world, One Piece. It was this revelation that brought about the Grand Age of Pirates, men who dreamed of finding One Piece (which promises an unlimited amount of riches and fame), and quite possibly the most coveted of titles for the person who found it, the title of the Pirate King. <br><br> Enter Monkey D. Luffy, a 17-year-old boy that defies your standard definition of a pirate. Rather than the popular persona of a wicked, hardened, toothless pirate who ransacks villages for fun, Luffy’s reason for being a pirate is one of pure wonder; the thought of an exciting adventure and meeting new and intriguing people, along with finding One Piece, are his reasons of becoming a pirate. Following in the footsteps of his childhood hero, Luffy and his crew travel across the Grand Line, experiencing crazy adventures, unveiling dark mysteries and battling strong enemies, all in order to reach One Piece. <br><br> <span class='c-white7'>(Source: AnimeNewsNetwork)</span>"
+          ],
+          "isAiring": "true",
+          "format": "TV",
+          "ep": 1108,
+          "ep-duration": "24 mins",
+          "stats": "Releasing",
+          "sDate": "Oct 20, 1999",
+          "season": "Fall 1999",
+          "score": "88%",
+          "studio": "Toei Animation",
+          "genres": ["Adventure", "Comedy", "Action", "Drama", "Fantasy"]
+        }
+      ]
+    },
+    "kny": {
+      "characters": {
+        "tanjirou": [
+          {
+            "name": "Tanjirou Kamado",
+            "image": "https://s4.anilist.co/file/anilistcdn/character/large/b126071-BTNEc1nRIv68.png",
+            "function": "Main",
+            "Va": "Natsuki Hanae",
+            "pic": "https://s4.anilist.co/file/anilistcdn/staff/large/n111635-L385UcjTKCBq.png",
+            "nationality": "Japanese"
+          }
+        ],
+        "nezuko": [
+          {
+            "name": "Nezuko Kamado",
+            "image": "https://s4.anilist.co/file/anilistcdn/character/large/b127518-NRlq1CQ1v1ro.png",
+            "function": "Main",
+            "Va": "Akari Kitou",
+            "pic": "https://s4.anilist.co/file/anilistcdn/staff/large/n119722-Ls7ORfBejJEP.jpg",
+            "nationality": "Japanese"
+          }
+        ],
+        "inosuke": [
+          {
+            "name": "Inosuke Hashibira",
+            "image": "https://s4.anilist.co/file/anilistcdn/character/large/n129130-SJC0Kn1DU39E.jpg",
+            "function": "Main",
+            "Va": "Yoshitsugu Matsuoka",
+            "pic": "https://s4.anilist.co/file/anilistcdn/staff/large/n106817-mioGQjbTWWQ6.png",
+            "nationality": "Japanese"
+          }
+        ],
+        "zenitsu": [
+          {
+            "name": "Zenitsu Agatsuma",
+            "image": "https://s4.anilist.co/file/anilistcdn/character/large/b129131-FZrQ7lSlxmEr.png",
+            "function": "Main",
+            "Va": "Hiro Shimono",
+            "pic": "https://s4.anilist.co/file/anilistcdn/staff/large/n95356-PFaZRlI9oJ56.png",
+            "nationality": "Japanese"
+          }
+        ],
+        "muzan": [
+          {
+            "name": "Muzan Kibutsuji",
+            "image": "https://s4.anilist.co/file/anilistcdn/character/large/b129132-4nIZakUZ1o8W.jpg",
+            "function": "Supporting",
+            "Va": "Toshihiko Seki",
+            "pic": "https://s4.anilist.co/file/anilistcdn/staff/large/n95129-AAL7kfwAPpgR.jpg",
+            "nationality": "Japanese"
+          }
+        ],
+        "rengoku": [
+          {
+            "name": "Kyoujurou Rengoku",
+            "image": "https://s4.anilist.co/file/anilistcdn/character/large/b129133-VlTPowwt68rJ.png",
+            "function": "Supporting",
+            "Va": "Satoshi Hino",
+            "pic": "https://s4.anilist.co/file/anilistcdn/staff/large/n95245-prBoWpg0HaGX.jpg",
+            "nationality": "Japanese"
+          }
+        ]
+      },
+      "staff": {
+        "creator": [
+          {
+            "name": "Koyoharu Gotouge",
+            "function": "Original Creator",
+            "pic": "https://s4.anilist.co/file/anilistcdn/staff/large/n119973-pzMtyCVGBWNt.jpg"
+          }
+        ],
+        "staff1": [
+          {
+            "name": "Haruo Sotozaki",
+            "function": "Episode Director",
+            "pic": "https://s4.anilist.co/file/anilistcdn/staff/large/n99006-ubhRe65EcEUF.jpg"
+          }
+        ],
+        "staff2": [
+          {
+            "name": "LiSA",
+            "function": "Theme Song Performance",
+            "pic": "https://s4.anilist.co/file/anilistcdn/staff/large/n105561-bluE1C2NqCrV.png"
+          }
+        ]
+      },
+      "images": [
+        {
+          "banner": "https://s4.anilist.co/file/anilistcdn/media/anime/banner/101922-YfZhKBUDDS6L.jpg",
+          "cover": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx101922-WBsBl0ClmgYL.jpg"
+        }
+      ],
+      "details": [
+        {
+          "name": "Demon Slayer: Kimetsu no Yaiba",
+          "sinopse": [
+            "It is the Taisho Period in Japan. Tanjiro, a kindhearted boy who sells charcoal for a living, finds his family slaughtered by a demon. To make matters worse, his younger sister Nezuko, the sole survivor, has been transformed into a demon herself. Though devastated by this grim reality, Tanjiro resolves to become a “demon slayer” so that he can turn his sister back into a human, and kill the demon that massacred his family.",
+            "(Source: Crunchyroll)"
+          ],
+          "isAiring": "false",
+          "format": "TV",
+          "ep": 26,
+          "ep-duration": "24 mins",
+          "stats": "Finished",
+          "sDate": "Apr 6, 2019",
+          "eDate": "Sep 28, 2019",
+          "season": "Spring 2019",
+          "score": "83%",
+          "studio": "ufotable",
+          "genres": ["Adventure", "Supernatural", "Action", "Drama", "Fantasy"]
+        }
+      ]
+    },
+    "aot": {
+      "characters": {
+        "eren": [
+          {
+            "name": "Eren Yeager",
+            "image": "https://s4.anilist.co/file/anilistcdn/character/large/b40882-dsj7IP943WFF.jpg",
+            "function": "Main",
+            "Va": "Yuuki Kaji",
+            "pic": "https://s4.anilist.co/file/anilistcdn/staff/large/n95672-RN4nm0OFwCyU.png",
+            "nationality": "Japanese"
+          }
+        ],
+        "mikasa": [
+          {
+            "name": "Mikasa Ackerman",
+            "image": "https://s4.anilist.co/file/anilistcdn/character/large/b40881-F3gr1PkreDvj.png",
+            "function": "Main",
+            "Va": "Yui Ishikawa",
+            "pic": "https://s4.anilist.co/file/anilistcdn/staff/large/n100142-k6RP0HzXffUG.png",
+            "nationality": "Japanese"
+          }
+        ],
+        "armin": [
+          {
+            "name": "Armin Arlert",
+            "image": "https://s4.anilist.co/file/anilistcdn/character/large/b46494-g7xYYuBtYPnO.png",
+            "function": "Main",
+            "Va": "Marina Inoue",
+            "pic": "https://s4.anilist.co/file/anilistcdn/staff/large/n95158-OLhgs8zv5xsp.jpg",
+            "nationality": "Japanese"
+          }
+        ],
+        "levi": [
+          {
+            "name": "Levi",
+            "image": "https://s4.anilist.co/file/anilistcdn/character/large/b45627-CR68RyZmddGG.png",
+            "function": "Supporting",
+            "Va": "Hiroshi Kamiya",
+            "pic": "https://s4.anilist.co/file/anilistcdn/staff/large/n95118-oOElrn1aSaiC.png",
+            "nationality": "Japanese"
+          }
+        ],
+        "sasha": [
+          {
+            "name": "Sasha Blouse",
+            "image": "https://s4.anilist.co/file/anilistcdn/character/large/b45887-QPtJH0KwqthW.jpg",
+            "function": "Supporting",
+            "Va": "Yuu Kobayashi",
+            "pic": "https://s4.anilist.co/file/anilistcdn/staff/large/n95034-AwobjrcmkMi9.png",
+            "nationality": "Japanese"
+          }
+        ],
+        "reiner": [
+          {
+            "name": "Reiner Braun",
+            "image": "https://s4.anilist.co/file/anilistcdn/character/large/b46484-P6A2GjNQn49F.png",
+            "function": "Supporting",
+            "Va": "Yoshimasa Hosoya",
+            "pic": "https://s4.anilist.co/file/anilistcdn/staff/large/n100626-bH8eZ0wv3HYX.jpg",
+            "nationality": "Japanese"
+          }
+        ]
+      },
+      "staff": {
+        "creator": [
+          {
+            "name": "Hajime Isayama",
+            "function": "Original Creator",
+            "pic": "https://s4.anilist.co/file/anilistcdn/staff/large/n106705-ttS2qZpF2FTZ.jpg"
+          }
+        ],
+        "staff1": [
+          {
+            "name": "Tetsurou Araki",
+            "function": "Director",
+            "pic": "https://s4.anilist.co/file/anilistcdn/staff/large/n100088-tFWlDxGJEPlk.png"
+          }
+        ],
+        "staff2": [
+          {
+            "name": "Masashi Koizuka",
+            "function": "Assistant Director",
+            "pic": "https://s4.anilist.co/file/anilistcdn/staff/large/118905-vN0KGRV37wBH.jpg"
+          }
+        ]
+      },
+      "images": [
+        {
+          "banner": "https://s4.anilist.co/file/anilistcdn/media/anime/banner/16498-8jpFCOcDmneX.jpg",
+          "cover": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx16498-73IhOXpJZiMF.jpg"
+        }
+      ],
+      "details": [
+        {
+          "name": "Attack on Titan",
+          "sinopse": [
+            "Several hundred years ago, humans were nearly exterminated by titans. Titans are typically several stories tall, seem to have no intelligence, devour human beings and, worst of all, seem to do it for the pleasure rather than as a food source. A small percentage of humanity survived by walling themselves in a city protected by extremely high walls, even taller than the biggest of titans.",
+            "Flash forward to the present and the city has not seen a titan in over 100 years. Teenage boy Eren and his foster sister Mikasa witness something horrific as the city walls are destroyed by a colossal titan that appears out of thin air. As the smaller titans flood the city, the two kids watch in horror as their mother is eaten alive. Eren vows that he will murder every single titan and take revenge for all of mankind.",
+            "(Source: MangaHelpers)"
+          ],
+          "isAiring": "false",
+          "format": "TV",
+          "ep": 25,
+          "ep-duration": "24 mins",
+          "stats": "Finished",
+          "sDate": "Apr 7, 2013",
+          "eDate": "Sep 28, 2013",
+          "season": "Spring 2013",
+          "score": "84%",
+          "studio": "Wit Studio",
+          "genres": ["Action", "Drama", "Fantasy", "Mystery"]
+        }
+      ]
+    },
+    "jjk": {
+      "characters": {
+        "megumi": [
+          {
+            "name": "Megumi Fushiguro",
+            "image": "https://s4.anilist.co/file/anilistcdn/character/large/b126635-L0y3I92JSUkN.png",
+            "function": "Main",
+            "Va": "Yuuma Uchida",
+            "pic": "https://s4.anilist.co/file/anilistcdn/staff/large/n119617-icFDk96OdV5k.png",
+            "nationality": "Japanese"
+          }
+        ],
+        "itadori": [
+          {
+            "name": "Yuuji Itadori",
+            "image": "https://s4.anilist.co/file/anilistcdn/character/large/b127212-FVm2tD0erQ5B.png",
+            "function": "Main",
+            "Va": "Junya Enoki",
+            "pic": "https://s4.anilist.co/file/anilistcdn/staff/large/n119319-yIrrUOUaJuSm.png",
+            "nationality": "Japanese"
+          }
+        ],
+        "gojou": [
+          {
+            "name": "Satoru Gojou",
+            "image": "https://s4.anilist.co/file/anilistcdn/character/large/b127691-UmAY8k2uXeQM.png",
+            "function": "Main",
+            "Va": "Yuuichi Nakamura",
+            "pic": "https://s4.anilist.co/file/anilistcdn/staff/large/n95513-up9ZDuocHgRs.png",
+            "nationality": "Japanese"
+          }
+        ],
+        "nobara": [
+          {
+            "name": "Nobara Kugisaki",
+            "image": "https://s4.anilist.co/file/anilistcdn/character/large/b133700-f6sOO3TcgLV6.png",
+            "function": "Main",
+            "Va": "Asami Seto",
+            "pic": "https://s4.anilist.co/file/anilistcdn/staff/large/n106787-ojpoY7XEGYgc.jpg",
+            "nationality": "Japanese"
+          }
+        ],
+        "suguru": [
+          {
+            "name": "Suguru Getou",
+            "image": "https://s4.anilist.co/file/anilistcdn/character/large/b133699-FCnXaISgazAi.png",
+            "function": "Supporting",
+            "Va": "Takahiro Sakurai",
+            "pic": "https://s4.anilist.co/file/anilistcdn/staff/large/n95079-MdbWTLxPUvFf.jpg",
+            "nationality": "Japanese"
+          }
+        ],
+        "sukuna": [
+          {
+            "name": "Sukuna",
+            "image": "https://s4.anilist.co/file/anilistcdn/character/large/b133701-JVAThWqcAncW.png",
+            "function": "Supporting",
+            "Va": "Junichi Suwabe",
+            "pic": "https://s4.anilist.co/file/anilistcdn/staff/large/n95095-DvSjTQnqcgXP.png",
+            "nationality": "Japanese"
+          }
+        ]
+      },
+      "staff": {
+        "creator": [
+          {
+            "name": "Gege Akutami",
+            "function": "Original Creator",
+            "pic": "https://s4.anilist.co/file/anilistcdn/staff/large/n125415-B1o6NtIImcCK.png"
+          }
+        ],
+        "staff1": [
+          {
+            "name": "Seong-Hu Park",
+            "function": "Director",
+            "pic": "https://s4.anilist.co/file/anilistcdn/staff/large/n123074-6tFkJXFgMNv9.png"
+          }
+        ],
+        "staff2": [
+          {
+            "name": "Yui Miura",
+            "function": "Assistant Director",
+            "pic": "https://s4.anilist.co/file/anilistcdn/staff/large/n142936-wmrPkmCaZGJV.png"
+          }
+        ]
+      },
+      "images": [
+        {
+          "banner": "https://s4.anilist.co/file/anilistcdn/media/anime/banner/113415-jQBSkxWAAk83.jpg",
+          "cover": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx113415-bbBWj4pEFseh.jpg"
+        }
+      ],
+      "details": [
+        {
+          "name": "Jujutsu Kaisen",
+          "sinopse": [
+            "A boy fights... for 'the right death.'",
+            "Hardship, regret, shame: the negative feelings that humans feel become Curses that lurk in our everyday lives. The Curses run rampant throughout the world, capable of leading people to terrible misfortune and even death. What's more, the Curses can only be exorcised by another Curse.",
+            "Itadori Yuji is a boy with tremendous physical strength, though he lives a completely ordinary high school life. One day, to save a friend who has been attacked by Curses, he eats the finger of the Double-Faced Specter, taking the Curse into his own soul. From then on, he shares one body with the Double-Faced Specter. Guided by the most powerful of sorcerers, Gojou Satoru, Itadori is admitted to the Tokyo Metropolitan Technical High School of Sorcery, an organization that fights the Curses... and thus begins the heroic tale of a boy who became a Curse to exorcise a Curse, a life from which he could never turn back.",
+            "(Source: MangaHelpers)"
+          ],
+          "isAiring": "false",
+          "format": "TV",
+          "ep": 24,
+          "ep-duration": "24 mins",
+          "stats": "Finished",
+          "sDate": "Oct 3, 2020",
+          "eDate": "Mar 27, 2021",
+          "season": "Fall 2020",
+          "score": "85%",
+          "studio": "MAPPA",
+          "genres": ["Action", "Drama", "Supernatural"]
+        }
+      ]
+    }
+  }
+}
