@@ -88,23 +88,23 @@ $_SESSION['avatar'] = $avatar;
       <h1 class="font-Poppins c-white1 fw-regular container">Browse Animes</h1>
       <div class="main-grid container">
         <div class="main-image-container">
-          <a href="./anime/one_piece.php"><img id="oneCover" src="" alt="One Piece"></a>
+          <a href="./anime/one_piece.php"><img src="https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx21-YCDoj1EkAxFn.jpg" alt="One Piece"></a>
         </div>
 
         <div class="main-image-container">
-          <a href="./anime/dbz.php"><img id="dbzCover" src="" alt="Dragon Ball Z"></a>
+          <a href="./anime/dbz.php"><img src="https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx813-TsHyhR3EDd2x.png" alt="Dragon Ball Z"></a>
         </div>
 
         <div class="main-image-container">
-          <a href="./anime/demon_slayer.php"><img id="knyCover" src="" alt="Kimetsu no Yaiba"></a>
+          <a href="./anime/demon_slayer.php"><img src="https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx101922-WBsBl0ClmgYL.jpg" alt="Kimetsu no Yaiba"></a>
         </div>
 
         <div class="main-image-container">
-          <a href="./anime/aot.php"><img id="aotCover" src="" alt="Attack on Titan"></a>
+          <a href="./anime/aot.php"><img src="https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx16498-73IhOXpJZiMF.jpg" alt="Attack on Titan"></a>
         </div>
 
         <div class="main-image-container">
-          <a href="./anime/jujutsu_kaisen.php"><img id="jjkCover" src="" alt="Jujutsu Kaisen"></a>
+          <a href="./anime/jujutsu_kaisen.php"><img src="https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx113415-bbBWj4pEFseh.jpg" alt="Jujutsu Kaisen"></a>
         </div>
       </div>
     </div>
